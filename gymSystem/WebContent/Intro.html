@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312"  /> 
+		<title>
+			场馆介绍
+		</title>
+        <table cellSpacing="1" cellPadding="1" width="300" align="center" border="0" >
+		<TR valign="bottom">
+		<font color="black">
+		<TD align="left"><A href="Index.html"><H2>体育场馆一览</H2></A></TD>
+		<TD align="left"><A href="Index.html"><H5>返回主页</H5></A></TD>
+		</font>
+		</TR>
+		</table>
+		
+		<style type="text/css">
+			#frm ul
+			{
+				margin:0;
+				
+				padding:0;	
+				float:left;/*浮动，自适应内部大小*/
+				list-style:none;
+				border-color::#999;/*设置初始化边框*/
+				border-style:solid;
+				border-width:1px;	
+				border-bottom:none;/*取消下部边框*/
+				
+			}
+			#frm ul li
+			{
+	width: 120px;
+	border-color: #999;/*设置初始化边框*/
+	border-style: solid;
+	border-width: 1px;
+	border-top: none;/*取消上部边框*/
+	border-left: none;/*取消左部边框*/
+	border-right: none;/*取消右部边框*/
+	font-size: 24px;
+	padding: 5px 10px;
+	text-align: center;
+	margin: 0;
+	float: left;/*左浮动*/
+	clear: both;/*从上一个浮动标签下面开始*/
+	color: #666;
+	cursor: pointer;/*设置鼠标指针为手指*/
+	/*背景渐变*/
+	background-image: -moz-linear-gradient(top, #FFFFFF, #DDDDDD); /* Firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #DDDDDD)); /* Safari, Chrome */
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#DDDDDD', GradientType='0'); /* IE*/
+			}
+			#frm ul #choose
+			{
+				background-image: -moz-linear-gradient(top, #FCB5A0, #F2482B); /* Firefox */
+				background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FCB5A0), color-stop(1, #F2482B)); /* Safari, Chrome */
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCB5A0', endColorstr='#F2482B', GradientType='0'); /* IE*/
+			}
+			#frm  #pics
+			{
+				float:left;
+				width:800px;
+				height:600px;
+				position:relative;/*设置绝对定位的根节点*/
+				border:#000000 1px solid;
+			}
+			#frm  #pics img
+			{
+				position:absolute;/*使用绝对定位，所有图片重合*/
+				left:0;
+				top:0;
+				width:100%;/*设置和父节点一样宽*/
+				height:100%;/*设置和父节点一样高*/
+				visibility:hidden;
+				border:0;
+			}
+*{margin:0;padding:0}
+
+body{font-size:20px}
+a{
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold
+}
+.product{display:block;position:absolute;width:800px;height:600px;line-height:30px}
+.product:hover{border:none}
+.product:hover span{height:100px}
+.product span{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	_bottom: 4px;
+	overflow: auto;
+	width: 100%;
+	height: 0px;
+	background: #FFF;
+	opacity: 0.5;
+	filter: alpha(opacity=50)
+}
+		</style>
+	</head>
+<body>
+		<div id="frm" >
+			<ul>	
+				<li>
+					篮球场
+				</li>
+				<li>
+					足球场
+				</li>
+				<li>
+					羽毛球场
+				</li>
+				<li>
+					网球场
+				</li>
+				<li>
+					乒乓球场
+				</li>
+				<li>
+					形体室
+				</li>
+				<li>
+					游泳池
+				</li>
+				<li>
+					健身房
+				</li>
+				<li>
+					体育馆
+				</li>
+			</ul>
+			<div id="pics">
+				<a class="product" href="#"><img name="1" src="img/lanqiuchang.jpg"/>
+                <span>篮球场</span></a>
+				<a class="product" href="#"><img name="2" src="img/zhuqiuchang.jpg"/>
+                <span>足球场</span></a>
+				<a class="product" href="#"><img name="3" src="img/yumaoqiuchang.jpg"/>
+                <span>羽毛球场</span></a>
+				<a class="product" href="#"><img name="4" src="img/wangqiuchang.jpg"/>
+                <span>网球场</span></a>
+				<a class="product" href="#"><img name="5" src="img/pingpangqiu.jpg"/>
+                <span>乒乓球场</span></a>
+				<a class="product" href="#"><img name="6" src="img/xingtishi.jpg"/>
+                <span>形体室</span></a>
+				<a class="product" href="#"><img name="7" src="img/youyongchi.jpg"/>
+                <span>游泳池</span></a>
+				<a class="product" href="#"><img name="8" src="img/jianshengfang.jpg"/>
+                <span>健身房</span></a>
+				<a class="product" href="#"><img name="9" src="img/tiyuguan.jpg"/>
+                <span>体育馆</span></a>
+				
+			</div>
+			
+		</div>
+	</body>
+	<script type="text/javascript" >
+		var frm=document.getElementById("frm");
+		var imgs=frm.getElementsByTagName("img");
+		var lists=frm.getElementsByTagName("li");
+		
+		/*9个li标签和9个img绑定*/
+		for( i=0; i<imgs.length; i++ )
+		{
+			if(i>=lists.length)
+				lists[i].img=null;
+			else
+				lists[i].img=imgs[i];/*绑定,img属性是自定义的*/
+			lists[i].onmouseover=mouseoverhandle;/*绑定鼠标移入事件*/	
+		}
+		lists[0].id="choose";/*将第一个li的id设置为choose就可以显示其颜色*/
+		if( lists[0].img!=null )
+			lists[0].img.style.visibility="visible";/*将第一个li的对应的img显示出来*/
+		function mouseoverhandle()
+		{
+			for( i=0; i<imgs.length; i++ )
+			{
+				lists[i].id="";	/*将所有li的id设置为""*/
+				lists[i].img.style.visibility="hidden";/*将所有li对应的img屏蔽*/
+			}
+			this.id="choose";/*将本li的id设置为choose就可以显示其颜色*/
+			if( this.img!=null )
+				this.img.style.visibility="visible";/*将本li的对应的img显示出来*/
+		}
+	</script>
+	
+	
+</html>
+
+

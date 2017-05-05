@@ -1,0 +1,14 @@
+﻿<%@ page contentType="text/html; charset=UTF-8" %>
+<div align="center">
+<H1>学生预约界面</H1>
+<table cellSpacing="1" cellPadding="1" width="760" align="center" border="0" >
+<tr valign="bottom">
+<td><H4><A href="login.jsp">学生登录</A></H4></td>
+<td><H4><A href="list_reserve_stu.jsp">查询订票信息</A></H4></td>
+<td><H4><A href="book.jsp">预定场地</A></H4></td>
+
+<td><H4><A href="Index.html">返回主页</A></H4></td>
+</tr>
+</Font>
+</table>
+</div>

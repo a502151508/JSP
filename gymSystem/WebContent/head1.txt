@@ -1,0 +1,15 @@
+﻿<%@ page contentType="text/html; charset=UTF-8" %>
+<div align="center">
+<H1>管理员界面</H1>
+<table cellSpacing="1" cellPadding="1" width="760" align="center" border="0" >
+<tr valign="bottom">
+<td><H4><A href="sysAdm.jsp">管理员主页</A></H4></td>
+<td><H4><A href="checkIn.jsp">检票入口</A></H4></td>
+
+<td><H4><A href="insertReserve.jsp">增加可预订时段</A></H4></td>
+<td><H4><A href="showReserve.jsp">操作可预订时段</A></H4></td>
+
+</tr>
+</Font>
+</table>
+</div>
